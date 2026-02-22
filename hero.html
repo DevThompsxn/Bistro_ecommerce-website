@@ -3,17 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <title>PROJECT NASA BOMBERS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Bistro</title>
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
+    <!-- container -->
+    <header class="header">
+      <nav class="nav-section">
+        <!-- Logo -->
+        <a href="#" class="logo">BISTRO</a>
+        <!-- Mid Nav -->
+        <ul class="nav-ul">
+          <li><a href="#">Home</a></li>
+          <li class="has-select">
+            <select name="shop" id="shop">
+              <option value="shop">Shop</option>
+              <option value="cart">Cart</option>
+            </select>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Pages</a></li>
+        </ul>
+        <!-- Right Nav -->
+        <div class="right-header">
+          <a href="#" class="login-link">
+            <img src="assets/images/login icon.png" alt="" />
+            <span>Login / Register</span>
+          </a>
+          <!-- Nav Icons -->
+          <div class="header-icons">
+            <a href="#" aria-label="Search">
+              <img src="assets/images/srch.png" alt="" />
+            </a>
+            <a href="#" aria-label="Cart">
+              <img src="assets/images/carrt.png" alt="" />
+            </a>
+            <a href="#" aria-label="Wishlist">
+              <img src="assets/images/love.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main>
+      <section class="first-section">
+        <!--  FIRST SECTION -HERO-- -->
+        <div class="firstsection-content">
+          <h1 class="first-h1">GROCERIES DELIVERY</h1>
+          <h4 class="first-p">
+            We know how large objects will act, but things on a <br />
+            small scale just do not act that way.
+          </h4>
+          <button class="btn">Start Now</button>
+        </div>
+        <div class="hero-pages">
+          <div class="hero-page1">A</div>
+          <div class="hero-page2">B</div>
+        </div>
+      </section>
+      <section class="second-section">
+        <!-- SECOND SECTION --  ITEMS -->
+        <div class="second-divsection">
+          <div class="second-div item1">
+            <p>Your Space</p>
+            <h2>Unique Life</h2>
+            <h6>Explore items</h6>
+          </div>
+          <div class="second-div item2">
+            <p>Ends Today</p>
+            <h2>Elements Style</h2>
+            <h6>Explore items</h6>
+          </div>
+          <div class="second-div item3">
+            <p>Your Space</p>
+            <h2>Elements Style</h2>
+            <h6>Explore items</h6>
+          </div>
+        </div>
+      </section>
       <!-- first shop block -->
       <section class="shop-section">
         <div class="shop-layout-left">
@@ -390,5 +472,95 @@
         </div>
       </section>
     </main>
+    <footer>
+        <!-- FOOTER SECTION -->
+        <!-- <section>
+        <div class="footer-container">
+          <div class="first-footer">
+            <div>
+              <h3 class="first-ft3">Consulting Agency For Your Business</h3>
+              <p class="firstp">the quick fox jumps over the lazy dog</p>
+            </div>
+            <div><button class="foot-btn">Contact Us</button></div>
+          </div>
+          <div class="secound-footer">
+            <div class="Company-footer">
+              <h3 class="foot-subheading">Company Info</h3>
+              <ul class="foot-ull">
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Carrier</li></a>
+                <a href=""><li>We are Hiring</li></a>
+                <a href=""><li>Blog</li></a>
+              </ul>
+            </div>
+            <div class="Legal-footer">
+              <h3 class="foot-subheading">Legal</h3>
+              <ul class="foot-ull">
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Carrier</li></a>
+                <a href=""><li>We are Hiring</li></a>
+                <a href=""><li>Blog</li></a>
+              </ul>
+            </div>
+            <div class="Features-foot">
+              <h3 class="foot-subheading">Features</h3>
+              <ul class="foot-ull">
+                <a href=""><li>Business Marketing</li></a>
+                <a href=""><li>User Analytic</li></a>
+                <a href=""><li>Live Chat</li></a>
+                <a href=""><li>Unlimited Support</li></a>
+              </ul>
+            </div>
+            <div class="Resources-foot">
+              <h3 class="foot-subheading">Resources</h3>
+              <ul class="foot-ull">
+                <a href=""><li>IOS & Android</li></a>
+                <a href=""><li>Watch a Demo</li></a>
+                <a href=""><li>Customers</li></a>
+                <a href=""><li>API</li></a>
+              </ul>
+            </div>
+            <div class="Get-foot">
+              <h3 class="foot-subheading">Get In Touch</h3>
+              <div>
+                <a href=" tel:(480) 555-0103" target="_blank">
+                  <img src="assets/images/call footer.png" alt="" />
+                  (480) 555-0103
+                </a>
+              </div>
+              <div>
+                <a
+                  href="https://www.google.com/maps?q=4517+Washington+Ave"
+                  target="_"
+                >
+                  <img src="assets/images/location footer.png" alt="" />
+                  4517 Washington Ave.
+                </a>
+              </div>
+              <div>
+                <a href=" malito:debra.holt@example.com" target="_blank">
+                  <img src="assets/images/message footer.png" alt="" />
+                  debra.holt@example.com
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="last-footer">
+            <div>
+              <h6 class="lastfoot-h6">
+                Made With Love By Finland All Right Reserved
+              </h6>
+            </div>
+            <div class="last-icons">
+              <a href=""
+                ><img src="assets/images/ant-design_facebook-filled.png" alt=""
+              /></a>
+              <a href=""><img src="assets/images/instagram.png" alt="" /></a>
+              <a href=""><img src="assets/images/Vector.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </footer>
   </body>
 </html>
