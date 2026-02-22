@@ -1,2 +1,1 @@
-# DevBrains
-# Sam
+# Bistro ecommerce website
