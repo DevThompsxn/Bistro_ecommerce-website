@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Header section */
+header {
+    width: 100%;
+    min-height: 91px;
+    background-color: #ffffff;
+    color: #737373;
+}
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.right-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.right-col a {
+    color: #23A6F0;
+}
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Hero section */
+.hero-section{
+    background: url("Images/shop-hero-3-product-slide-2.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 640px;
+    text-align: center;
+    color: #ffffff;
+    padding: 112px 80px
+}
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(699px, 100%);
+    margin: 0 auto;
+}
+ .primary-cta {
+    color: #FFFFFF;
+    background-color: #23A6F0;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 204px;
+    min-height: 62px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+ }
+
+h1 {
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    padding-top: 200px;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height:30px ;
+    letter-spacing: 0.2px;
+    width: min(530px, 100%);
+}
