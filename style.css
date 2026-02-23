@@ -486,7 +486,7 @@ body {
 
 
 /* Media Query */
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
     .shop-layout-left,
     .shop-layout-right,
     .feature-row,
@@ -577,7 +577,7 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .shop-section {
         height: auto;
     }
@@ -642,16 +642,8 @@ body {
     .product-card,
     .product-image,
     .product-card-body {
-        width: min(100%, 320px);
-    }
-
-    .product-card {
+        width: 100%;
         height: auto;
-    }
-
-    .product-image {
-        height: auto;
-        object-fit: cover;
     }
 
     .product-card-body a {
@@ -688,5 +680,3 @@ body {
         height: auto;
     }
 }
-
-  
