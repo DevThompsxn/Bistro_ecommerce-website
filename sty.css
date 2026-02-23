@@ -10,9 +10,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat';
+}
 header {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
 }
 
 a {
@@ -76,7 +80,7 @@ select {
 
 /* Hero Section */
 .hero {
-  background-image: url('../assets/images/backk.jpg');
+  background-image: url('assets/imgs/shop-hero-3-product-slide-2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
