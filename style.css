@@ -21,29 +21,32 @@ body {
 
 /* shop layouts */
 .shop-layout-left, .shop-layout-right {
-    width: 1077px;
+    width: 80%;
     height: 895px;
     margin: 0 auto;
     padding: 48px 0;
     gap: 30px;
     display: flex;
+    justify-content: center;
 }
 
 /* ads */
 .promo-banner-left {
     background-image: url(assets/imgs/card-cover-5.png);
-    width: 389px;
+    background-repeat: no-repeat;
+    width: 50%;
     height: 796px;
 }
 
 .promo-banner-right {
     background-image: url(assets/imgs/card-cover-5.jpg);
-    width: 389px;
+    background-repeat: no-repeat;
+    width: 50%;
     height: 796px;
 }
 
 .promo-banner-body {
-    width: 389px;
+    width: 50%;
     height: 101px;
     padding: 24px ;
     gap: 5px;
@@ -316,22 +319,51 @@ body {
 
 /* feature section */
 .feature-section {
-    width: 1440px;
-    max-width: 100%;
+    width: 100%;
+    /* max-width: 100%; */
     height: 886px;
     padding: 48px 0;
     margin: 0 auto;
 }
 
 .feature-row {
-    width: 1069px;
+    width: 92%;
     height: 649px;
     margin: 0 auto;
     display: flex;
+    /* justify-content: center; */
 }
 
+.feature1-img-container {
+    /* background-image: url(assets/imgs/unsplash_X5BWooeO4Cw.png);
+    background-size: cover; */
+    width: 60%;
+}
+
+.feature2-row {
+    width: 92%;
+    height: 784px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.feature2-img-container {
+    /* background-image: url(assets/imgs/unsplash_X5BWooeO4Cw\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    width: 60%;
+    height: 784px;
+}
+
+.feature2-img-container img {
+    width: 100%;
+    height: 784px;
+}
+
+
 .feature-card {
-    width: 401px;
+    width:50%;
     height: 649px;
     padding: 80px 0;
     gap: 30px;
@@ -344,7 +376,7 @@ body {
 }
 
 .feature-card-large {
-    width: 401px;
+    width: 40%;
     height: 784px;
     padding: 80px 0;
     gap: 30px;
@@ -402,7 +434,7 @@ body {
 
 /* points */
 .benefits-row {
-    width: 1066px;
+    width: 80%;
     height: 111px;
     margin: 0 auto;
     display: grid;
@@ -411,7 +443,7 @@ body {
 }
 
 .benefit-card {
-    width: 265px;
+    width: 80%;
     height: 111px;
     padding: 25px;
     background-color: #FFFFFF;
@@ -421,7 +453,7 @@ body {
 }
 
 .benefit-card h2 {
-    width: 28px;
+    width: 18px;
     height: 50px;
     font-size: 40px;
     font-weight: 700;
@@ -431,7 +463,7 @@ body {
 }
 
 .benefit-body {
-    width: 153px;
+    width: 100%;
     height: 45px;
 }
 
@@ -480,10 +512,10 @@ body {
     color: #737373;
 }
 
-.feature-hero-wrap {
+/* .feature-img-conti {
     width: 674px;
     height: 784px;
-}
+} */
 
 
 /* Media Query */
