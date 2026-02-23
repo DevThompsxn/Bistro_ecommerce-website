@@ -31,13 +31,13 @@ body {
 
 /* ads */
 .promo-banner-left {
-    background-image: url('assets/imgs/card-cover-5.png');
+    background-image: url(assets/imgs/card-cover-5.png);
     width: 389px;
     height: 796px;
 }
 
 .promo-banner-right {
-    background-image: url('assets/imgs/card-cover-5.jpg');
+    background-image: url(assets/imgs/card-cover-5.jpg);
     width: 389px;
     height: 796px;
 }
