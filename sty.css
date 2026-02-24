@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-color: #23A6F0;
   --text-color: ;
   --bg-color: ;
@@ -79,7 +79,7 @@ select {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   background-image: url('assets/imgs/shop-hero-3-product-slide-2.jpg');
   background-size: cover;
   background-position: center;
@@ -145,16 +145,15 @@ select {
   align-items: center;
   justify-content: center;
   gap: 50px;
-}
+} */
 
-.shop-card {
+/* .shop-card {
   margin: 0 auto;
   height: 232px;
   border: 1px solid #ececec;
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
   padding: 35px;
   justify-content: space-between;
   width: 350px;
@@ -209,7 +208,7 @@ select {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */ 
 
 /* responsive */
 /* img {
