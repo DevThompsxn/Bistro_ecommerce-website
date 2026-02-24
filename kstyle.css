@@ -98,3 +98,49 @@ h4 {
     letter-spacing: 0.2px;
     width: min(530px, 100%);
 }
+
+/* Media Query */
+@media (max-width: 640px) {
+    body, header, main, footer {
+        width: 100%;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .links {
+        width: 10%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .hero-section {
+        width: 98%;
+        margin:0 auto ;
+    }
+
+
+    .hero-container h1 {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .hero-container h4 {
+        font-size: 15px;
+    }
+
+    .hero-container button {
+        font-size: 20px;
+        padding: 10px;
+        width: 150px;
+        margin-top: 10px;
+    }
+}

@@ -398,3 +398,191 @@ hr {
     align-items: center;
     gap: 20px;
 }
+
+
+/* Media Query */
+
+@media (max-width: 640px) {
+    body, header, main, footer {
+        width: 100%;
+    }
+
+    .hero-section, .shop-section {
+        width: 98%;
+        margin:0 auto ;
+    }
+
+    .card-item {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query */
+
+@media (max-width: 1024px) {
+    .card-item,
+    .product-container,
+    .brands-container,
+    .posts-container,
+    .footer-container {
+        width: 90%;
+    }
+
+    .graphics-flex,
+    .post-cards-flex {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footer-flex-items {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .shop-cards {
+        padding: 50px 0;
+    }
+
+    .card-item {
+        gap: 20px;
+    }
+
+    .card-content {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        gap: 20px;
+    }
+
+    .products {
+        min-height: auto;
+    }
+
+    .product-container h3 {
+        text-align: center;
+    }
+
+    .graphics-card {
+        width: min(320px, 100%);
+        height: auto;
+        justify-content: center;
+    }
+
+    .graphics-card img {
+        width: 100%;
+    }
+
+    .brands-container {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .h6-pa {
+        margin-top: 60px;
+    }
+
+    .posts-container h2 {
+        font-size: 32px;
+        line-height: 42px;
+        margin-bottom: 40px;
+    }
+
+    .post-cards-flex {
+        gap: 20px;
+    }
+
+    .post-card-content {
+        width: min(420px, 100%);
+        min-height: auto;
+    }
+
+    .footer {
+        min-height: auto;
+    }
+
+    .footer-top,
+    .footer-bottom {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-flex-items {
+        margin-top: 20px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .graphics-card {
+            width: min(320px, 100%);
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .graphics-card img {
+            width: 100%;
+        }
+    
+        .brands-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+    .card-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .product-container h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .posts-container h2 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .post-card-text {
+        padding: 20px;
+    }
+
+    .tags {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .icon-frame {
+        align-items: flex-start;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footer-texts h3 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .secondary-cta {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+}
