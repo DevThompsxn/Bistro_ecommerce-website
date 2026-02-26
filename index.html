@@ -601,7 +601,7 @@
                 <div class="icon-frame">
                   <div class="icon">
                     <img src="Images/icon akar-icons-calendar.png" alt="" />
-                    <small>22 April 2021</small>
+                    <small class="post-date" data-date="2026-02-26T00:00:00">26 February 2026</small>
                   </div>
                   <div class="icon">
                     <img
@@ -635,7 +635,7 @@
                 <div class="icon-frame">
                   <div class="icon">
                     <img src="Images/icon akar-icons-calendar.png" alt="" />
-                    <small>22 April 2021</small>
+                    <small class="post-date" data-date="2026-02-26T00:00:00">26 February 2026</small>
                   </div>
                   <div class="icon">
                     <img
@@ -669,7 +669,7 @@
                 <div class="icon-frame">
                   <div class="icon">
                     <img src="Images/icon akar-icons-calendar.png" alt="" />
-                    <small>22 April 2021</small>
+                    <small class="post-date" data-date="2026-02-26T00:00:00">26 February 2026</small>
                   </div>
                   <div class="icon">
                     <img
@@ -808,6 +808,31 @@
       </button>
     </footer>
   </body>
+
+  
   <script>
+    (() => {
+      const dayMs = 24 * 60 * 60 * 1000;
+      const now = new Date();
+      const labels = document.querySelectorAll(".post-date[data-date]");
+
+      labels.forEach((label) => {
+        const rawDate = label.getAttribute("data-date");
+        const postDate = new Date(rawDate);
+
+        if (Number.isNaN(postDate.getTime())) return;
+
+        const diffMs = now.getTime() - postDate.getTime();
+        const diffDays = Math.floor(Math.max(0, diffMs) / dayMs);
+
+        if (diffDays === 0) {
+          label.textContent = "today";
+        } else if (diffDays === 1) {
+          label.textContent = "1 day ago";
+        } else {
+          label.textContent = `${diffDays} days ago`;
+        }
+      });
+    })();
   </script>
 </html>
