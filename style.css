@@ -113,6 +113,7 @@ body {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .product-list-nav li {
@@ -440,6 +441,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
+    
 }
 
 .benefit-card {
@@ -450,16 +452,19 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-top: 30px;
 }
 
 .benefit-card h2 {
-    width: 18px;
+    /* width: 18px;
     height: 50px;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 50px;
-    letter-spacing: 0.2px;
+    font-size: 40px;*/
+    font-weight: 700; 
+    /* letter-spacing: 0.2px; */
     color: #E74040;
+    width: 30px;
+    font-size: 40px;
+    height: 50px;
 }
 
 .benefit-body {
@@ -521,8 +526,14 @@ body {
 /* Media Query */
 
 @media (max-width: 640px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
         height: 100vh;
+        overflow-x: hidden;
     }
      body, header, main, footer {
         width: 100%;
@@ -553,7 +564,7 @@ body {
     }
 
     .product-list-panel {
-        width: 90%;
+        width: 100%;
         height: 2237px;
     }
 
@@ -562,6 +573,7 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        width: 100%;
     }
 
     .product-grid {
@@ -596,7 +608,7 @@ body {
     .feature-section {
         width: 98%;
         margin:0 auto ;
-        height: 1600px;
+        height: 1850px;
     }
 
     .feature-row {
@@ -626,7 +638,6 @@ body {
 
     .benefits-row {
         width: 80%;
-        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -644,10 +655,12 @@ body {
         grid-template-areas: "promo-banner-right"
                              "product-list-panel";
         height: auto;
+        align-items: center;
+        justify-content: center;
     }
     .promo-banner-right {
         grid-area: promo-banner-right;
-        width: 70%;
+        width: 100%;
         height: 664px;
         background-size: cover;
         margin: 0 auto;
@@ -655,7 +668,7 @@ body {
 
     /* Feature Section 2 */
     .feature2 {
-        height: 1200px;
+        height: auto;
     }
 
     .feature2-row {
@@ -665,12 +678,12 @@ body {
         grid-template-columns: auto;
         grid-auto-rows: auto;
         grid-template-areas: "feature2-img-container"
-                             "feature-card-large";
+        "feature-card-large";
     }
 
     .feature2-img-container {
         grid-area: feature2-img-container;
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
@@ -679,6 +692,7 @@ body {
         width: 90%;
         height: auto;
         padding: 40px 0;
+        margin: 30px auto;
         background-color: #FFFFFF;
     }
 
@@ -687,13 +701,23 @@ body {
     }
 
     .feature2-img-container img {
-        width: 98%;
+        width: 100%;
         max-width: 98%;
         height: auto;
         display: block;
         margin: 0 auto;
     }
 
+    .feature-image-wrap {
+        width: 90%;
+        height: auto;
+    }
+
+    .feature-image-wrap
+
+    .feature-image {
+        width: 100%;
+    }
     .colors img {
         display: none;
     }
