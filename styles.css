@@ -165,13 +165,26 @@ hr {
 }
 
 .brands-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: slide-in 4s ease-out 1s infinite;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 2;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 0.9;
+  }
 }
 
 
@@ -220,6 +233,11 @@ hr {
     width: min(348px, 100%);
     min-height: 606px;
     box-shadow: 0 0 1px 0 rgb(0, 0, 0, 0.3);
+}
+.post-card-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.3);
+    transition: 1s ease-in-out;
 }
 
 .post-card-image {
